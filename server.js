@@ -184,7 +184,7 @@ function serveStatic(req, res, pathname) {
   fs.readFile(file, (err, buf) => {
     if (err) return fs.readFile(path.join(PUB, '404.html'), (e2, b2) => send(res, 404, e2 ? 'Not found' : b2, 'text/html; charset=utf-8'));
     const ext = path.extname(file);
-    send(res, 200, buf, MIME[ext] || 'application/octet-stream', { 'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=3600' });
+    send(res, 200, buf, MIME[ext] || 'application/octet-stream', { 'Cache-Control': ['.html', '.css', '.js'].includes(ext) ? 'no-cache' : 'public, max-age=3600' });
   });
 }
 

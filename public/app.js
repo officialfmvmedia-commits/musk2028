@@ -25,9 +25,14 @@
   // ---------- CA chips (driven by window.MUSK2028.CA in /site-config.js) ----------
   const CA = String((window.MUSK2028 && window.MUSK2028.CA) || '').trim();
   $$('[data-ca]').forEach((el) => {
-    const t = $('.ca-text', el);
-    if (!CA) { t.textContent = 'CA: awaiting'; el.classList.add('pending'); el.title = 'Contract address not yet published'; return; }
-    el.classList.add('live'); t.textContent = 'CA: ' + (CA.length > 16 ? CA.slice(0, 6) + '…' + CA.slice(-6) : CA); el.title = 'Copy ' + CA;
+    const v = $('.ca-val', el);
+    if (!CA) {
+      v.textContent = 'awaiting'; el.classList.add('pending'); el.title = 'Contract address not published yet';
+      el.addEventListener('click', () => toast('Contract address not published yet'));
+      return;
+    }
+    el.classList.add('live'); v.textContent = CA.length > 16 ? CA.slice(0, 6) + '…' + CA.slice(-6) : CA;
+    el.title = 'Copy ' + CA; el.setAttribute('aria-label', 'Copy contract address ' + CA);
     el.addEventListener('click', async () => { try { await navigator.clipboard.writeText(CA); toast('Contract address copied'); } catch { toast(CA); } });
   });
 
