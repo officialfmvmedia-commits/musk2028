@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cut">
+<title>MUSK2028 — The Draft Movement</title>
+<meta name="description" content="An independent grassroots movement asking Elon Musk to run for President in 2028 — and asking Congress to open the presidency to Americans who have been citizens for 20 years. Sign the petition.">
+<meta property="og:title" content="MUSK2028 — Draft the Builder">
+<meta property="og:description" content="Sign the petition. Amend the rule. Let the people decide.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@vote4musk">
+<meta name="twitter:creator" content="@vote4musk">
+<meta name="theme-color" content="#0A1A3A">
+<link rel="canonical" href="https://musk2028.vote/">
+<meta property="og:url" content="https://musk2028.vote/">
+<meta property="og:site_name" content="MUSK2028">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script src="/site-config.js" defer></script><script src="/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#sign">Skip to the petition</a>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="Musk2028 home">MUSK<span>2028</span></a>
+  <nav aria-label="Sections">
+    <a href="/manifesto">Manifesto</a>
+    <a href="#how">How it works</a>
+    <a href="#party">America Party</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav-right"><a class="nav-x" href="https://x.com/vote4musk" target="_blank" rel="noopener" aria-label="Musk2028 on X (@vote4musk)" title="@vote4musk on X"><span aria-hidden="true">𝕏</span></a><a class="btn btn-red btn-sm" href="#sign">Sign the petition</a></div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-art" aria-hidden="true">
+    <svg class="stripes" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity=".25"/></linearGradient>
+        <mask id="m"><rect width="1600" height="900" fill="url(#fade)"/></mask>
+      </defs>
+      <g mask="url(#m)" fill="none" stroke-width="34">
+        <path class="w w1" d="M-50 520 C 300 430, 600 640, 900 540 S 1400 420, 1700 500" stroke="#C8102E" stroke-opacity=".55"/>
+        <path class="w w2" d="M-50 600 C 300 510, 600 720, 900 620 S 1400 500, 1700 580" stroke="#F4EFE4" stroke-opacity=".14"/>
+        <path class="w w3" d="M-50 680 C 300 590, 600 800, 900 700 S 1400 580, 1700 660" stroke="#C8102E" stroke-opacity=".45"/>
+        <path class="w w4" d="M-50 760 C 300 670, 600 880, 900 780 S 1400 660, 1700 740" stroke="#F4EFE4" stroke-opacity=".10"/>
+        <path class="w w5" d="M-50 840 C 300 750, 600 960, 900 860 S 1400 740, 1700 820" stroke="#C8102E" stroke-opacity=".35"/>
+      </g>
+    </svg>
+    <canvas id="stars"></canvas>
+    <div class="orbit"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-pills"><p class="eyebrow"><span class="dot"></span> An independent, people-powered draft movement</p><button type="button" class="ca-chip" data-ca aria-label="Contract address"><span class="ca-dot" aria-hidden="true"></span><span class="ca-text">CA: awaiting</span><span class="ca-copy" aria-hidden="true">⧉</span></button></div>
+    <h1 id="hero-title" class="wordmark"><span class="wm-musk">MUSK</span><span class="wm-year">2028</span></h1>
+    <p class="hero-lede">Draft the builder. <em>Amend the rule.</em> Let the people decide.</p>
+    <p class="hero-sub">We’re asking Elon Musk to run for President in 2028 — and asking Congress to open the presidency to every American who has been a citizen for twenty years. It starts with a name on a page.</p>
+    <div class="hero-cta">
+      <a class="btn btn-red btn-lg" href="#sign">Add your name <span aria-hidden="true">→</span></a>
+      <a class="btn btn-x btn-lg follow" href="https://x.com/vote4musk" target="_blank" rel="noopener"><span aria-hidden="true">𝕏</span> Follow @vote4musk</a>
+      <a class="btn btn-ghost btn-lg" href="#how">How this could work</a>
+    </div>
+  </div>
+
+  <aside class="hero-count" aria-live="polite">
+    <div class="hc-label">Americans who have signed</div>
+    <div class="hc-num" data-count>—</div>
+    <div class="hc-meta"><span data-xverified>0</span> X-verified · <span data-states>0</span> states</div>
+    <div class="hc-bar"><span data-bar></span></div>
+    <div class="hc-goal">Next milestone: <b data-goal>—</b></div>
+  </aside>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mq-track">
+  <span>DRAFT MUSK</span><i>★</i><span>AMEND THE RULE</span><i>★</i><span>BUILD AMERICA AGAIN</span><i>★</i><span>LET THE PEOPLE DECIDE</span><i>★</i><span>2028</span><i>★</i>
+  <span>DRAFT MUSK</span><i>★</i><span>AMEND THE RULE</span><i>★</i><span>BUILD AMERICA AGAIN</span><i>★</i><span>LET THE PEOPLE DECIDE</span><i>★</i><span>2028</span><i>★</i>
+</div></div>
+
+<!-- WHY -->
+<section class="why section" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">01 — The case</p>
+      <h2 id="why-title">America was built by people who refused to accept <em>“that can’t be done.”</em></h2>
+    </div>
+    <div class="manifesto">
+      <p class="lead-para">This movement is for everyone who is tired of being told the future is too expensive, too hard, or somebody else’s job. We believe the country deserves a leader who treats impossible problems as engineering problems — and who answers to results, not to the two-party machine.</p>
+      <ol class="tenets">
+        <li><span class="n">I</span><div><h3>Build again</h3><p>Factories, power, roads, rockets. A nation that makes things is a nation that leads. We want permits measured in weeks, not decades.</p></div></li>
+        <li><span class="n">II</span><div><h3>Stop the waste</h3><p>Every wasted dollar is a dollar taken from a family that earned it. Government should be lean, transparent and accountable to the people who fund it.</p></div></li>
+        <li><span class="n">III</span><div><h3>Speak freely</h3><p>The answer to bad speech is more speech. A free people can handle open debate — and deserve to.</p></div></li>
+        <li><span class="n">IV</span><div><h3>Aim higher</h3><p>The country that put people on the Moon should never settle for managed decline. We want a future worth being excited about.</p></div></li>
+        <li><span class="n">V</span><div><h3>Choose freely</h3><p>Voters deserve more than two options. If the people want someone on the ballot, the rules should let them have that choice.</p></div></li>
+      </ol>
+      <a class="btn btn-navy" href="/manifesto">Read the full manifesto <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PETITION -->
+<section class="petition section" id="sign" aria-labelledby="sign-title">
+  <div class="wrap petition-grid">
+    <div class="pet-copy">
+      <p class="kicker light">02 — The petition</p>
+      <h2 id="sign-title">Petition the Congress. Put your name on the record.</h2>
+      <div class="statement" id="statement">
+        <p class="st-head">To the Senate and House of Representatives of the United States of America in Congress assembled</p>
+        <p class="st-title">A Petition for Redress, Under the First Amendment, for a Constitutional Amendment to the Natural-Born Citizen Clause</p>
+        <p>Exercising the right of the people “to petition the Government for a redress of grievances,” secured by the First Amendment to the Constitution, we, the undersigned, respectfully petition the Congress:</p>
+        <p><strong>That</strong> the Congress, two-thirds of both Houses concurring, propose under Article V a joint resolution amending the Constitution so that a citizen of the United States who has been a citizen for at least twenty years, and who is otherwise qualified, shall not be ineligible to the Office of President by reason of the natural-born citizen requirement of Article II, Section 1, Clause 5; and submit that amendment to the States for ratification.</p>
+        <p><strong>And we declare</strong> our hope that, should the people secure that choice, Elon Musk will stand as a candidate for President of the United States in 2028.</p>
+        <p class="st-note">Signing is a public expression of support. It is not a legal filing, a ballot-access petition, or a vote.</p>
+      </div>
+      <details class="amend">
+        <summary>Read the proposed amendment text</summary>
+        <div class="amend-body">
+          <p class="am-cap">JOINT RESOLUTION — Proposing an amendment to the Constitution of the United States to make eligible for the Office of President a person who has been a citizen of the United States for twenty years.</p>
+          <p><em>Resolved by the Senate and House of Representatives of the United States of America in Congress assembled (two-thirds of each House concurring therein),</em> That the following article is proposed as an amendment to the Constitution of the United States:</p>
+          <p class="am-art">“Article —</p>
+          <p>“<b>Section 1.</b> A person who is a citizen of the United States, who has been for twenty years a citizen of the United States, and who is otherwise eligible to the Office of President, is not ineligible to that Office by reason of not being a natural born citizen of the United States.</p>
+          <p>“<b>Section 2.</b> This article shall not take effect unless it has been ratified as an amendment to the Constitution by the legislatures of three-fourths of the several States not later than seven years from the date of its submission to the States by the Congress.”</p>
+          <p class="am-src">Modeled on S.J.Res.15 (108th Congress), the “Equal Opportunity to Govern Amendment,” introduced by Sen. Orrin G. Hatch on July 10, 2003. The age (35) and fourteen-year residency requirements of Article II would remain unchanged.</p>
+        </div>
+      </details>
+      <div class="pet-stats">
+        <div><b data-count>—</b><span>signatures</span></div>
+        <div><b data-xverified>0</b><span>X-verified</span></div>
+        <div><b data-states>0</b><span>states</span></div>
+      </div>
+      <div class="recent">
+        <h3>Latest signers</h3>
+        <ul id="recent-list" aria-live="polite"><li class="empty">Be the first name on the list.</li></ul>
+      </div>
+    </div>
+
+    <div class="pet-card">
+      <form id="sign-form" novalidate autocomplete="on">
+        <div class="pc-head">
+          <span class="pc-star" aria-hidden="true">★</span>
+          <div><h3>Sign the petition</h3><p>Takes 20 seconds. No money, ever.</p></div>
+        </div>
+        <label class="field">
+          <span>Full name <em>*</em></span>
+          <input name="name" type="text" required maxlength="80" autocomplete="name" placeholder="Jane Q. Public">
+          <small class="err" data-err="name"></small>
+        </label>
+        <div class="row2">
+          <label class="field">
+            <span>ZIP code <i>optional</i></span>
+            <input name="zip" type="text" inputmode="numeric" maxlength="10" autocomplete="postal-code" placeholder="78701">
+            <small class="err" data-err="zip"></small>
+          </label>
+          <label class="field">
+            <span>State <i>optional</i></span>
+            <select name="state" autocomplete="address-level1">
+              <option value="">Select</option>
+            </select>
+            <small class="err" data-err="state"></small>
+          </label>
+        </div>
+        <label class="field">
+          <span>Email <i>optional</i></span>
+          <input name="email" type="email" maxlength="254" autocomplete="email" placeholder="you@example.com">
+          <small class="hint" id="email-hint">Never shown publicly. Used only to confirm your signature and, if you opt in, send updates.</small>
+          <small class="err" data-err="email"></small>
+        </label>
+        <label class="hp" aria-hidden="true">Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+        <label class="check">
+          <input type="checkbox" name="optIn">
+          <span>Send me occasional movement updates by email. Unsubscribe anytime.</span>
+        </label>
+        <label class="check">
+          <input type="checkbox" name="consent" required>
+          <span>I support this petition to Congress and understand it is an expression of support, not a legal filing. I agree to the <a href="/privacy" target="_blank" rel="noopener">privacy policy</a>. My first name, last initial and state may be shown publicly. <em>*</em></span>
+        </label>
+        <small class="err" data-err="consent"></small>
+        <button class="btn btn-red btn-block btn-lg" type="submit" id="sign-btn">Sign the petition</button>
+        <p class="form-msg" id="form-msg" role="status"></p>
+
+        <div class="xverify">
+          <div class="xv-row">
+            <div>
+              <b>Verify with your X account</b>
+              <p>Optional. Adds an <span class="badge-x">X-verified</span> badge to your signature. We read only your public username — we never post for you.</p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-x btn-block" id="x-btn" disabled>Sign first, then verify with X</button>
+          <small class="hint" id="x-note"></small>
+        </div>
+      </form>
+
+      <div class="thanks" id="thanks" hidden>
+        <div class="th-star" aria-hidden="true">★</div>
+        <h3>Thank you, <span id="th-name">patriot</span>.</h3>
+        <p id="th-line">Your name is on the record.</p>
+        <ul class="th-status" id="th-status"></ul>
+        <div class="th-actions">
+          <a class="btn btn-x btn-block" id="th-x" href="#">Verify with X</a>
+          <a class="btn btn-red btn-block" data-share href="#" target="_blank" rel="noopener">Share on X</a>
+        </div>
+        <p class="th-small"><button type="button" class="linkbtn" id="th-remove">Remove my signature</button></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="how section" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">03 — How this could actually work</p>
+      <h2 id="how-title">The honest path from a petition to a ballot.</h2>
+      <p class="sec-sub">We won’t pretend the road is easy. Here’s exactly where things stand, and what would have to happen.</p>
+    </div>
+
+    <div class="obstacle">
+      <div class="ob-quote">
+        <p class="ob-label">The obstacle — U.S. Constitution, Article II, Section 1, Clause 5</p>
+        <p class="ob-text">“No Person except a natural born Citizen, or a Citizen of the United States, at the time of the Adoption of this Constitution, shall be eligible to the Office of President…”</p>
+      </div>
+      <div class="ob-facts">
+        <div><b>1971</b><span>Born in Pretoria, South Africa</span></div>
+        <div><b>2002</b><span>Became a U.S. citizen by naturalization</span></div>
+        <div><b>Today</b><span>Not eligible under current law — but the law can change</span></div>
+      </div>
+    </div>
+
+    <div class="paths">
+      <article class="path primary">
+        <p class="p-tag">Path 1 · The real one · Article V</p>
+        <h3>A constitutional amendment</h3>
+        <p>The Constitution has been amended 27 times. Opening the presidency to long-time naturalized citizens would be the 28th. Article V gives two ways to <em>propose</em> it and two ways to <em>ratify</em> it:</p>
+        <ol class="steps">
+          <li><b>Proposal by Congress:</b> a joint resolution passed by two-thirds of the House <i>and</i> two-thirds of the Senate. It does not go to the President for signature. Every one of the 27 amendments began this way.</li>
+          <li><b>Or proposal by convention:</b> two-thirds of state legislatures (34 of 50) apply to Congress to call a convention for proposing amendments. This route has never been used.</li>
+          <li><b>Ratification by three-fourths of the states — 38 of 50</b> — through their legislatures or through state ratifying conventions, whichever Congress specifies. Only the 21st Amendment was ratified by conventions.</li>
+          <li><b>Time limit:</b> since the 18th Amendment, Congress has usually set a seven-year ratification deadline, in the text or the resolving clause. Without one, ratification can take as long as it takes — the 27th was proposed in 1789 and ratified in 1992.</li>
+        </ol>
+        <p class="note">It’s been proposed before. On July 10, 2003, Sen. Orrin Hatch introduced the <em>Equal Opportunity to Govern Amendment</em> (S.J.Res.15), making anyone who has been a citizen for 20 years eligible; the Senate Judiciary Committee held a hearing on the idea in October 2004, but it never received a vote. By 2028, Musk will have been a citizen for 26 years. The fastest ratification in history, the 26th Amendment, took 100 days after Congress passed it in 1971.</p>
+      </article>
+      <article class="path">
+        <p class="p-tag">Path 2 · The long shot</p>
+        <h3>A court test</h3>
+        <p>The Supreme Court has never ruled directly on the full meaning of “natural born Citizen.” A candidacy could test it in court. Be clear-eyed, though: legal scholars broadly agree that the phrase does not include naturalized citizens, so this route is unlikely to succeed on its own.</p>
+      </article>
+      <article class="path">
+        <p class="p-tag">Path 3 · Where you come in</p>
+        <h3>Prove the demand</h3>
+        <p>Amendments don’t start in Washington. They start when enough people make it impossible to ignore. Every signature here is a public, countable signal to members of Congress, state legislatures and Musk himself that Americans want this choice.</p>
+      </article>
+    </div>
+
+    <div class="timeline" aria-label="Timeline">
+      <div class="tl-item"><span>Now</span><p>Build the list. Every state, every district.</p></div>
+      <div class="tl-item"><span>2027</span><p>Take the numbers to Congress. Ask members to sponsor an amendment.</p></div>
+      <div class="tl-item"><span>2027–28</span><p>Push for passage and state ratification.</p></div>
+      <div class="tl-item"><span>Nov 7, 2028</span><p>Election Day. Let the people decide.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTY -->
+<section class="party section" id="party" aria-labelledby="party-title">
+  <div class="wrap party-grid">
+    <div>
+      <p class="kicker light">04 — The America Party</p>
+      <h2 id="party-title">“Today, the America Party is formed to give you back your freedom.”</h2>
+      <p class="attrib">— Elon Musk, on X, July 5, 2025</p>
+    </div>
+    <div class="party-copy">
+      <p>On July 5, 2025, a day after polling his followers on whether America needed a new political party, Elon Musk announced the America Party, arguing that on spending and debt “we live in a one-party system, not a democracy.”</p>
+      <p>We’ll be straight with you: news reports since then indicate no formal FEC registration followed, and in the 2026 midterm cycle Musk has put his political spending behind Republican candidates through America PAC.</p>
+      <p>We think the idea he named — a real alternative to a two-party system that keeps spending money it doesn’t have — still deserves a movement. Musk2028 is that movement’s grassroots signal: a place for ordinary Americans to say that if the choice existed, we’d want it.</p>
+      <p class="fine">Musk2028 is independent and is not the America Party, America PAC, or any campaign.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="sec-head">
+      <p class="kicker">05 — Questions</p>
+      <h2 id="faq-title">Straight answers.</h2>
+    </div>
+    <div class="faq-list">
+      <details open><summary>Is Elon Musk eligible to run for President?</summary><p>Not under current law. Article II requires a “natural born Citizen,” and Musk was born in South Africa and naturalized in 2002. That’s why this petition asks for a constitutional amendment, not just a campaign.</p></details>
+      <details><summary>Is this affiliated with Elon Musk, the America Party, or his companies?</summary><p>No. Musk2028 is an independent grassroots movement. It is not affiliated with, authorized by, or endorsed by Elon Musk, the America Party, America PAC, Tesla, SpaceX, X, xAI, or any candidate or campaign.</p></details>
+      <details><summary>Does it cost anything? Will you ask me for money?</summary><p>No. We do not collect donations or payments of any kind. If anyone asks you for money in the name of Musk2028, it isn’t us.</p></details>
+      <details><summary>Why is email optional?</summary><p>Because a signature is a name, not a mailing list. If you add an email, we use it to confirm your signature is real and, only if you tick the box, to send occasional updates. It is never shown publicly and never sold.</p></details>
+      <details><summary>What does “Verify with X” do?</summary><p>It proves a real X account stands behind your signature. You sign in on X’s own site; we receive only your public user ID and username and immediately revoke the access. We can’t post, read your DMs, or see your password. It’s optional.</p></details>
+      <details><summary>What do you show publicly?</summary><p>Only your first name, last initial and state (if you gave one), plus an X-verified badge if you verified. Never your email, ZIP or full name.</p></details>
+      <details><summary>How do I remove my signature?</summary><p>Right after signing, use “Remove my signature” on this page (the link stays available in that browser). If you gave an email, there’s also a removal link in the confirmation email. See the <a href="/privacy">privacy policy</a> for more.</p></details>
+      <details><summary>Is this a legal filing?</summary><p>No. Signing is a public expression of support under the spirit of the First Amendment’s right to petition. It is not a ballot-access petition, a vote, or a filing with any government body. Its power is the public, verifiable count.</p></details>
+      <details><summary>Will this petition be delivered to anyone?</summary><p>The goal is to show public demand to members of Congress, state legislators and Elon Musk. The live count on this page is the real count from our database — no padding, no seeded numbers.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- SHARE -->
+<section class="share section" aria-labelledby="share-title">
+  <div class="wrap share-inner">
+    <h2 id="share-title">A movement is just people who tell other people.</h2>
+    <p>Signed already? The most powerful thing you can do next is bring three friends.</p>
+    <div class="share-row">
+      <a class="btn btn-red btn-lg" data-share href="#" target="_blank" rel="noopener">Share on X</a>
+      <a class="btn btn-x btn-lg" href="https://x.com/vote4musk" target="_blank" rel="noopener"><span aria-hidden="true">𝕏</span> Follow @vote4musk</a>
+      <button class="btn btn-ghost btn-lg" type="button" id="copy-link">Copy link</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand big" href="#top">MUSK<span>2028</span></a>
+      <p class="foot-tag">Draft the builder. Amend the rule. Let the people decide.</p>
+      <div class="foot-official"><a class="foot-x" href="https://x.com/vote4musk" target="_blank" rel="noopener"><span aria-hidden="true">𝕏</span> Official: @vote4musk</a><button type="button" class="ca-chip" data-ca aria-label="Contract address"><span class="ca-dot" aria-hidden="true"></span><span class="ca-text">CA: awaiting</span><span class="ca-copy" aria-hidden="true">⧉</span></button></div>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#sign">Sign the petition</a>
+      <a href="/manifesto">Manifesto</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="/privacy">Privacy policy</a>
+    </nav>
+  </div>
+  <div class="wrap disclaimer">
+    <p><strong>Independent grassroots movement.</strong> Musk2028 is not affiliated with, authorized by, or endorsed by Elon Musk, the America Party, America PAC, Tesla, SpaceX, X Corp., xAI, or any candidate, campaign, or political committee. All trademarks belong to their respective owners. No donations or payments are solicited or accepted.</p>
+    <p>Sources: U.S. Constitution, Art. II, §1, cl. 5; Art. V; First Amendment · S.J.Res.15 (108th Congress) · Reuters, NYT, BBC and CNN reporting on the America Party (July 2025) · NBC News and POLITICO reporting on America PAC (2026).</p>
+    <p>© <span id="yr"></span> Musk2028.</p>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

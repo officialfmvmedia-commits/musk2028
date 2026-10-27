@@ -1,0 +1,12 @@
+{
+  "name": "musk2028",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Musk2028 — independent grassroots draft movement site with a working petition.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": { "node": ">=22.13" },
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "nodemailer": "^6.9.16",
+    "pg": "^8.13.1" }
+}
